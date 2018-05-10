@@ -9,6 +9,6 @@ export const fetchData = () => (
     dispatch(fetchDataRequest());
     return fetchWeatherData()
       .then((weatherInfo) => dispatch(fetchDataSuccess(weatherInfo)))
-      .catch(() => dispatch(fetchDataError()));
+      .catch(() => dispatch(fetchDataError())) ;
   }
 );
